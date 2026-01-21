@@ -1,0 +1,60 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #005461;
+}
+
+.title-secondary {
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+#header {
+    background-color: #0C7779;
+    border-radius: 10px;
+}
+
+#title-name {
+    letter-spacing: 10px;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+#title-cv {
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+#img-alvaro{
+    border-radius: 15%;
+}
+
+#links{
+    background-color: #3BC1A8;
+}
+
+#skills{
+    background-color: #0C7779;
+}
+
+#education{
+    background-color: #249E94;
+}
+
+#experience {
+    background-color: #0C7779;
+}
+
+table {
+    width: 90%;
+    padding: 30px;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid black;
+    text-align: left;
+    padding: 10px;
+}
+
