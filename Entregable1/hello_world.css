@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    font-style: oblique;
+    
+}
+
+h1:hover {
+    color: red;
+    text-decoration: underline;
+    font-size: 35px;
+}
+
