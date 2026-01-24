@@ -138,7 +138,16 @@ th, td {
         flex-direction: column;
     }
 
-    table{
-        overflow-x:auto;
+}
+
+@media (max-width: 768px){
+    #title-name{
+        font-size: 50px;
+    }
+    #title-cv{
+        font-size: 20px;
+    }
+    #header img{
+        height: 250px;
     }
 }
