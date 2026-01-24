@@ -19,7 +19,7 @@ body {
 
 .small-title {
     font-size: 30px;
-    padding-top: 10px;
+    padding-top: 30px
 }
 
 .light-color{
@@ -72,6 +72,8 @@ body {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    padding-top: 20px;
+    padding-left: 0px;
 }
 
 #links{
@@ -119,3 +121,47 @@ th, td {
     padding: 10px;
 }
 
+@media (min-width: 1024px) {
+    #title-name{
+        font-size: 70px;
+    }
+    #title-cv{
+        font-size: 30px;
+    }
+    #header img{
+        height: 350px;
+    }
+    #skills ol{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px){
+    #title-name{
+        font-size: 50px;
+    }
+    #title-cv{
+        font-size: 20px;
+    }
+    #header img{
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px){
+    #title-name{
+        font-size: 40px;
+    }
+
+    #title-cv{
+        font-size: 17px;
+    }
+
+    #header img{
+        height: 200px;
+    }
+
+    #skills-list{
+        flex-direction: column;
+    }
+}
