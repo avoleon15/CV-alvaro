@@ -73,6 +73,7 @@ body {
     justify-content: space-evenly;
     list-style: none;
     padding-top: 20px;
+    padding-left: 0px;
 }
 
 #links{
@@ -120,3 +121,24 @@ th, td {
     padding: 10px;
 }
 
+@media (max-width: 480px){
+    #title-name{
+        font-size: 40px;
+    }
+
+    #title-cv{
+        font-size: 17px;
+    }
+
+    #header img{
+        height: 200px;
+    }
+
+    #skills-list{
+        flex-direction: column;
+    }
+
+    table{
+        overflow-x:auto;
+    }
+}
