@@ -8,6 +8,8 @@ body {
     padding: 30px;
     margin: 5%;
     border-radius: 10px;
+
+    box-shadow: 5px 5px 20px #474a4e;
 }
 
 .title-secondary {
@@ -19,7 +21,7 @@ body {
 
 .small-title {
     font-size: 30px;
-    padding-top: 30px
+    padding-top: 0px
 }
 
 .light-color{
@@ -69,18 +71,22 @@ body {
 }
 
 #links ul {
-    display: flex;
-    justify-content: space-evenly;
     list-style: none;
-    padding-top: 20px;
     padding-left: 0px;
+
+    display: flex;
+    gap: 10%;
 }
 
 #links{
     background-color: #DFD0B8;
     text-align: center;
-    padding: 7px;
-    margin-top: 10px;
+    margin-top: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
 }
 
 #skills-list {
@@ -94,6 +100,7 @@ body {
 
 #skills ol{
     list-style-type: none;
+    padding-left: 0px;
 }
 
 #education{
@@ -146,6 +153,10 @@ th, td {
     #header img{
         height: 250px;
     }
+
+    #skills-list{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 480px){
@@ -153,15 +164,27 @@ th, td {
         font-size: 40px;
     }
 
+    .title-secondary{
+        font-size: 30px;
+    }
+
     #title-cv{
         font-size: 17px;
+    }
+
+    .small-title{
+        font-size: 20px;
     }
 
     #header img{
         height: 200px;
     }
 
-    #skills-list{
-        flex-direction: column;
+    #links ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        padding-left: 0px;
     }
+
 }
