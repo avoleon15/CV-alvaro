@@ -1,0 +1,72 @@
+body{
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%)
+}
+
+header{
+    height: 800px;
+    width: 100vw;
+    
+    background: #030305;
+    background: radial-gradient(circle, rgba(3, 3, 5, 1) 0%, rgba(45, 53, 79, 1) 100%);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.234);
+
+}
+
+header h1{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100px;
+    letter-spacing: 10px;
+}
+
+header h5{
+    color: rgb(189, 189, 189);
+}
+
+header img {
+    height: 300px;
+    width: 300px;
+}
+
+#skills {
+    margin-top: 100px;
+    background: #ffffff;
+    background: radial-gradient(circle, rgba(3, 3, 5, 1) 0%, rgba(45, 53, 79, 1) 100%);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.234);
+
+    color: white;
+}
+
+#skills h2 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 80px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+#skills h3 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#skills article {
+    height: 200px;
+    background-color: #4b6bb760;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.234);
+}
+
+#skills p{
+    display: flex;
+    align-items: center;
+}
+
+#skills ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
