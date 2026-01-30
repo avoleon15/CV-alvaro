@@ -28,6 +28,14 @@ header img {
     width: 300px;
 }
 
+section h2 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 80px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
 #skills {
     margin-top: 100px;
     background: #ffffff;
@@ -35,14 +43,6 @@ header img {
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.234);
 
     color: white;
-}
-
-#skills h2 {
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 80px;
-    letter-spacing: 10px;
-    text-align: center;
 }
 
 #skills article {
@@ -121,12 +121,12 @@ header img {
     color: white;
 }
 
-#education h2 {
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 80px;
-    letter-spacing: 10px;
+#education article{
     text-align: center;
+}
+
+#education h6, #education p{
+    font-weight: 100;
 }
 
 #experience {
@@ -138,18 +138,19 @@ header img {
     color: white;
 }
 
-#experience h2 {
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 80px;
-    letter-spacing: 10px;
-    text-align: center;
-}
-
 .project-box-1, .project-box-2 {
     height: 650px;
     background-color: #4b6bb73d;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.234);
+}
+
+.project-box-1 h4{
+    font-size: 50px;
+    padding: 5px;
+}
+
+.project-box-1 p, .project-box-1 ul{
+    color: #d4d4d4;
 }
 
 .project-box-2 img {
@@ -191,3 +192,97 @@ footer button {
     justify-content: end;
 }
 
+@media (max-width: 768px){
+    header h1 {
+        font-size: 68px;
+    }
+
+    section h2 {
+        font-size: 50px;
+    }
+
+    #skills p, #skills ul {
+        font-size: 13px;
+    }
+
+    #skills h3 {
+        font-size: 17px;
+    }
+
+    #education h5 {
+        font-size: 15px;
+    }
+
+    #education h6, #education p{
+        font-size: 12px;
+    }
+
+    .project-box-1, .project-box-2{
+        height: 400px;
+    }
+
+    .project-box-1 h4{
+        font-size: 30px;
+    }
+
+    .project-box-1 p, .project-box-1 ul{
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px){
+    section h2 {
+        font-size: 40px;
+    }
+    
+    header {
+        height: 600px;
+    }
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    header img {
+        height: 225px;
+        width: 225px;
+    }
+
+    #skills article {
+        height: 175px;
+    }
+
+    #skills p, #skills ul {
+        font-size: 11px;
+    }
+
+    #skills h3 {
+        font-size: 14px;
+    }
+
+    .image-holder{
+        height: 75px;
+        width: 75px;
+    }
+
+    #education h5 {
+        font-size: 14px;
+    }
+
+    #education h6, #education p{
+        font-size: 11px;
+    }
+
+    #experience article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
