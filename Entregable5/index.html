@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta charset="UTF-8">
@@ -8,7 +9,7 @@
     <title>My CV</title>
 </head>
 <body>
-    <header class="container-fluid row">
+    <header class="container-fluid row mx-0">
         <div class="container col text-center">
             <h1 class="pt-5">Alvaro Leon</h1>
             <h5 class="pb-5">Curriculum Vitae</h5>
@@ -16,25 +17,24 @@
         </div>
     </header>
 
-    <section class="py-5" id="skills" class="container-fluid">
+    <section id="skills" class="container-fluid py-5">
         <h2 class="py-5">SKILLS</h2>
         <div class="container">
             <article class="my-3 row">
-                <div class="col-3">
+                <div id="web-development" class="image-box col-3">
                 <h3>Web Development</h3>
-                <img alt="image 1">
                 </div>
                 <p class="col-6">Useful for creating interactive and responsive web interfaces, handling application logic and data processing, and enabling efficient communication between systems and external services for scalable digital solutions.</p>
                 <ul class="col-3">
                     <li>Python</li>
+                    <li>HTML, CSS, JS</li>
                     <li>React</li>
                     <li>REST API</li>
                 </ul>
             </article>
             <article class="my-3 row">
-                <div class="col-3">
+                <div id="languages" class="image-box col-3">
                 <h3>Languages</h3>
-                <img alt="image 1">
                 </div>
                 <p class="col-6">Bilingual, fluent in both languages with full proficiency in speaking and writing.</p>
                 <ul class="col-3">
@@ -43,9 +43,8 @@
                 </ul>
             </article>
             <article class="my-3 row">
-                <div class="col-3">
-                <h3>Business & Analytical Foundations</h3>
-                <img alt="image 1">
+                <div id="buisness" class="image-box col-3">
+                <h3>Buisness & Analytical Foundations</h3>
                 </div>
                 <p class="col-6">Useful for creating interactive and responsive web interfaces, handling application logic and data processing, and enabling efficient communication between systems and external services for scalable digital solutions.</p>
                 <ul class="col-3">
@@ -57,5 +56,109 @@
             </article>
         </div>
     </section>
+
+    <section id="education" class="container-fluid py-5">
+        <h2 class="py-5">EDUCATION</h2>
+        <div class="container-fluid row my-5">
+            <article class="education-box col-4">
+                <div class="image-holder mb-3">
+                    <img src="assets/images/VVlogo.jpeg" alt="Colegio Valle Verde logo">
+                </div>
+                <h5>High School Diploma</h5>
+                <h6>Colegio Valle Verde</h6>
+                <p>2018-2022</p>
+            </article>
+            <article class="education-box col-4">
+                <div class="image-holder mb-3">
+                    <img src="assets/images/DALElogo.png" alt="Dale Carnegie logo">
+                </div>
+                <h5>Generation Next Diploma</h5>
+                <h6>Dale Carnegie</h6>
+                <p>2019</p>
+            </article>
+            <article class="education-box col-4">
+                <div class="image-holder mb-3">
+                    <img src="assets/images/UFMlogo.png" alt="Universidad Francisco Marroquin logo">
+                </div>
+                <h5>BSc Computer Science</h5>
+                <h6>Universidad Francisco Marroquin</h6>
+                <p>2025-2029</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="experience" class="container-fluid py-5">
+        <h2 class="py-5">EXPERIENCE</h2>
+        <div class="container-fluid">
+            <article class="project-box row my-5">
+                <div class="col project-box-1 mx-2">
+                <h4 class="pt-3">Quetzalink</h4>
+                <p>Presented and worked on Quetzalink. Developed on react, we created a gamified application focused on economic education for students in Guatemala. Got second place at the FEE Hackaton.</p>
+                <ul>
+                    <li>React</li>
+                    <li>Presentation skills</li>
+                    <li>Economic Education knowledge</li>
+                </ul>
+                </div>
+                <div class="col project-box-2 px-0">
+                    <img src="./assets/images/Quetzalink-ss.png" alt="Quetzalink project image">
+                </div>
+            </article>
+            <article class="project-box row my-5">
+                <div class="col project-box-1 mx-2">
+                <h4 class="pt-3">Clash Royale API</h4>
+                <p>Using Rest API integration I created a web page that fetches information for the player.</p>
+                <ul>
+                    <li>Python</li>
+                    <li>REST API</li>
+                    <li>HTML, CSS, JS</li>
+                </ul>
+                </div>
+                <div class="col project-box-2 px-0">
+                    <img src="./assets/images/CRAPI-ss.png" alt="Clash Royale API project image">
+                </div>
+            </article>
+            <article class="project-box row my-5">
+                <div class="col project-box-1 mx-2">
+                <h4 class="pt-3">Brownies page</h4>
+                <p>Created a page dedicated to sell brownies.</p>
+                <ul>
+                    <li>React</li>
+                </ul>
+                </div>
+                <div class="col project-box-2 px-0">
+                    <img src="./assets/images/BrowniesPage-ss.png" alt="Brownies page project image">
+                </div>
+            </article>
+            <article class="project-box row my-5">
+                <div class="col project-box-1 mx-2">
+                <h4 class="pt-3">Math Game</h4>
+                <p>Developed a Math Game which includes levels, lives, difficulty, and animation.</p>
+                <ul>
+                    <li>HTML, CSS ,JS</li>
+                </ul>
+                </div>
+                <div class="col project-box-2 px-0">
+                    <img src="./assets/images/MathGame-ss.png" alt="Math Game image project">
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="container-fluid row mx-0 pt-5">
+        <p class="col"> © Made By Alvaro Leon</p>
+        <div id="footer-center-container" class="container col">
+            <p>Check out my: </p>
+            <a href="https://github.com/avoleon15" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/%C3%A1lvaro-le%C3%B3n-a88340255/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+        </div>
+        <div id="footer-end-container" class="container col">
+            <p>Download</p>
+            <button id="PDF-button"><i class="fa-solid fa-download fa-lg"></i></button>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
