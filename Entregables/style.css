@@ -35,7 +35,7 @@ header img {
     width: 300px;
 }
 
-#darkmode-button {
+.button-style{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #ffffffa5;
     border: 1px solid rgba(255, 255, 255, 0.59);
@@ -45,10 +45,18 @@ header img {
     transition: all 1s ease 0s;
 }
 
-#darkmode-button:hover{
+.button-style:hover{
     color: white;
     border-color: white;
     box-shadow: 1px 1px 20px rgba(152, 152, 152, 0.234);;
+}
+
+#personal-info-container{
+    display: none;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    color: #ffffffa5;
 }
 
 section h2 {

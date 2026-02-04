@@ -26,9 +26,17 @@ function toggle(){
     } else {
         document.getElementById("experience-container").style.display = "none";
         document.getElementById("experience-button").innerHTML = "Click here to reveal my experience";
-
     }
+}
 
+function personalInfo(){
+    if (document.getElementById("personal-info-container").style.display === "none"){
+        document.getElementById("personal-info-container").style.display = "flex";
+        document.getElementById("info-button").innerHTML = "Hide Info";
+    } else {
+        document.getElementById("personal-info-container").style.display = "none";
+        document.getElementById("info-button").innerHTML = "Show Info";
+    }
 }
 
 function darkMode(){
