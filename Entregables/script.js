@@ -31,6 +31,38 @@ function toggle(){
 
 }
 
+function darkMode(){
+    if (document.getElementById("darkmode-button").innerHTML === "Light Mode"){
+        document.body.style.background = "linear-gradient(90deg, #8ca9ee 0%, #cedaf4 100%)";
+        document.getElementById("darkmode-button").innerHTML = "Dark Mode"
+        document.querySelector("header").classList.remove("darkblue-color");
+        document.querySelector("footer").classList.remove("darkblue-color");
+        document.getElementById("skills").classList.remove("darkblue-color");
+        document.getElementById("education").classList.remove("darkblue-color");
+        document.getElementById("experience").classList.remove("darkblue-color");
+
+        document.querySelector("header").classList.add("lightblue-color");
+        document.querySelector("footer").classList.add("lightblue-color");
+        document.getElementById("skills").classList.add("lightblue-color");
+        document.getElementById("education").classList.add("lightblue-color");
+        document.getElementById("experience").classList.add("lightblue-color");
+    } else {
+        document.body.style.background = "radial-gradient(circle, rgba(3, 3, 5, 1) 0%, rgba(45, 53, 79, 1) 100%)";
+        document.getElementById("darkmode-button").innerHTML = "Light Mode"
+        document.querySelector("header").classList.remove("lightblue-color");
+        document.querySelector("footer").classList.remove("lightblue-color");
+        document.getElementById("skills").classList.remove("lightblue-color");
+        document.getElementById("education").classList.remove("lightblue-color");
+        document.getElementById("experience").classList.remove("lightblue-color");
+
+        document.querySelector("header").classList.add("darkblue-color");
+        document.querySelector("footer").classList.add("darkblue-color");
+        document.getElementById("skills").classList.add("darkblue-color");
+        document.getElementById("education").classList.add("darkblue-color");
+        document.getElementById("experience").classList.add("darkblue-color");
+    }
+}
+
 document.getElementById("PDF-button").addEventListener("click", () => { html2pdf()
     .from(document.body)
     .save("AlvaroLeon-CV.pdf");
