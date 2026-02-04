@@ -6,14 +6,20 @@ header{
     height: 800px;
     width: 100vw;
     
-    background: #030305;
-    background: radial-gradient(circle, rgba(3, 3, 5, 1) 0%, rgba(45, 53, 79, 1) 100%);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.234);
+}
 
+.darkblue-color{
+    background: radial-gradient(circle, rgba(3, 3, 5, 1) 0%, rgba(45, 53, 79, 1) 100%);
+    color: #ffffff;
+}
+
+.lightblue-color{
+    background: radial-gradient(circle, rgb(55, 55, 192) 0%, rgb(128, 194, 242) 100%);
+    color: white;
 }
 
 header h1{
-    color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 100px;
     letter-spacing: 10px;
@@ -21,11 +27,36 @@ header h1{
 
 header h5{
     color: rgb(189, 189, 189);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header img {
     height: 300px;
     width: 300px;
+}
+
+.button-style{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffffa5;
+    border: 1px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    border-radius: 10px;
+
+    transition: all 1s ease 0s;
+}
+
+.button-style:hover{
+    color: white;
+    border-color: white;
+    box-shadow: 1px 1px 20px rgba(152, 152, 152, 0.234);;
+}
+
+#personal-info-container{
+    display: none;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    color: #ffffffa5;
 }
 
 section h2 {
@@ -38,11 +69,15 @@ section h2 {
 
 #skills {
     margin-top: 100px;
-    background: #ffffff;
-    background: radial-gradient(circle, rgba(3, 3, 5, 1) 0%, rgba(45, 53, 79, 1) 100%);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.234);
+}
 
+#skills a {
     color: white;
+}
+
+#SeacrhBar-skills {
+    width: 100%;
 }
 
 #skills article {
@@ -114,11 +149,8 @@ section h2 {
 
 #education {
     margin-top: 100px;
-    background: #ffffff;
-    background: radial-gradient(circle, rgba(3, 3, 5, 1) 0%, rgba(45, 53, 79, 1) 100%);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.234);
 
-    color: white;
 }
 
 #education article{
@@ -131,11 +163,40 @@ section h2 {
 
 #experience {
     margin-top: 100px;
-    background: #ffffff;
-    background: radial-gradient(circle, rgba(3, 3, 5, 1) 0%, rgba(45, 53, 79, 1) 100%);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.234);
 
+}
+
+#experience-button{
+    color: rgba(255, 255, 255, 0.574);
+    padding: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.415);
+    border-radius: 10px;
+    background-color:#4b6bb748;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    width: 100%;
+
+    transition: all 1s ease 0s;
+}
+
+#experience-button:hover{
+    border-color: white;
     color: white;
+    background-color:#4b6bb781;
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.234);
+}
+
+#experience-button:active{
+    border-color: white;
+    color: white;
+    background-color:#4b6bb781;
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.234);
+
+}
+
+#experience-container{
+    display: none;
 }
 
 .project-box-1, .project-box-2 {
@@ -161,11 +222,7 @@ section h2 {
 
 footer {
     margin-top: 100px;
-    background: #ffffff;
-    background: radial-gradient(circle, rgba(3, 3, 5, 1) 0%, rgba(45, 53, 79, 1) 100%);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.234);
-
-    color: white;
 }
 
 footer i {
@@ -178,11 +235,20 @@ footer div {
     gap: 2%;
 }
 
-footer button {
+button {
     background: none;
     padding: 0px;
     border: none;
 }
+
+button:active {
+    border: none;
+}
+
+button:focus{
+    border: none;
+}
+
 
 #footer-center-container {
     justify-content: center;
@@ -195,6 +261,10 @@ footer button {
 @media (max-width: 768px){
     header h1 {
         font-size: 68px;
+    }
+
+    header h5 {
+        font-size: 18px;
     }
 
     section h2 {
@@ -250,6 +320,10 @@ footer button {
     header img {
         height: 225px;
         width: 225px;
+    }
+
+    header h5 {
+        font-size: 15px;
     }
 
     #skills article {
