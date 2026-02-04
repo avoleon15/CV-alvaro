@@ -138,6 +138,38 @@ section h2 {
     color: white;
 }
 
+#experience-button{
+    color: rgba(255, 255, 255, 0.574);
+    padding: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.415);
+    border-radius: 10px;
+    background-color:#4b6bb748;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    width: 100%;
+
+    transition: all 1s ease 0s;
+}
+
+#experience-button:hover{
+    border-color: white;
+    color: white;
+    background-color:#4b6bb781;
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.234);
+}
+
+#experience-button:active{
+    border-color: white;
+    color: white;
+    background-color:#4b6bb781;
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.234);
+
+}
+
+#experience-container{
+    display: none;
+}
+
 .project-box-1, .project-box-2 {
     height: 650px;
     background-color: #4b6bb73d;
@@ -178,11 +210,20 @@ footer div {
     gap: 2%;
 }
 
-footer button {
+button {
     background: none;
     padding: 0px;
     border: none;
 }
+
+button:active {
+    border: none;
+}
+
+button:focus{
+    border: none;
+}
+
 
 #footer-center-container {
     justify-content: center;

@@ -19,6 +19,18 @@ function checkHour(hour){
 
 document.getElementById("welcome-message").innerHTML = checkHour(clock);
 
+function toggle(){
+    if (document.getElementById("experience-container").style.display === "none"){
+        document.getElementById("experience-container").style.display = "block";
+        document.getElementById("experience-button").innerHTML = "Click here to hide my experience";
+    } else {
+        document.getElementById("experience-container").style.display = "none";
+        document.getElementById("experience-button").innerHTML = "Click here to reveal my experience";
+
+    }
+
+}
+
 document.getElementById("PDF-button").addEventListener("click", () => { html2pdf()
     .from(document.body)
     .save("AlvaroLeon-CV.pdf");
