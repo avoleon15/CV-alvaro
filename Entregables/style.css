@@ -70,7 +70,14 @@ section h2 {
 #skills {
     margin-top: 100px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.234);
+}
 
+#skills a {
+    color: white;
+}
+
+#SeacrhBar-skills {
+    width: 100%;
 }
 
 #skills article {

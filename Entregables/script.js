@@ -19,26 +19,6 @@ function checkHour(hour){
 
 document.getElementById("welcome-message").innerHTML = checkHour(clock);
 
-function toggle(){
-    if (document.getElementById("experience-container").style.display === "none"){
-        document.getElementById("experience-container").style.display = "block";
-        document.getElementById("experience-button").innerHTML = "Click here to hide my experience";
-    } else {
-        document.getElementById("experience-container").style.display = "none";
-        document.getElementById("experience-button").innerHTML = "Click here to reveal my experience";
-    }
-}
-
-function personalInfo(){
-    if (document.getElementById("personal-info-container").style.display === "none"){
-        document.getElementById("personal-info-container").style.display = "flex";
-        document.getElementById("info-button").innerHTML = "Hide Info";
-    } else {
-        document.getElementById("personal-info-container").style.display = "none";
-        document.getElementById("info-button").innerHTML = "Show Info";
-    }
-}
-
 function darkMode(){
     if (document.getElementById("darkmode-button").innerHTML === "Light Mode"){
         document.body.style.background = "linear-gradient(90deg, #8ca9ee 0%, #cedaf4 100%)";
@@ -70,6 +50,54 @@ function darkMode(){
         document.getElementById("experience").classList.add("darkblue-color");
     }
 }
+
+
+function toggle(){
+    if (document.getElementById("experience-container").style.display === "none"){
+        document.getElementById("experience-container").style.display = "block";
+        document.getElementById("experience-button").innerHTML = "Click here to hide my experience";
+    } else {
+        document.getElementById("experience-container").style.display = "none";
+        document.getElementById("experience-button").innerHTML = "Click here to reveal my experience";
+    }
+}
+
+function searchSkills() {
+    const input = document.getElementById("SeacrhBar-skills");
+    const filter = input.value.toUpperCase();
+
+    const listIds = ["skills-list1", "skills-list2", "skills3-list"];
+
+    listIds.forEach(id => {
+        const ul = document.getElementById(id);
+        if (!ul) return;
+
+        const li = ul.getElementsByTagName("li");
+
+        for (let i = 0; i < li.length; i++) {
+        const a = li[i].getElementsByTagName("a")[0];
+        const txtValue = a.textContent || a.innerText;
+
+        li[i].style.display = txtValue.toUpperCase().includes(filter)
+            ? ""
+            : "none";
+        }
+    });
+}
+
+
+
+
+function personalInfo(){
+    if (document.getElementById("personal-info-container").style.display === "none"){
+        document.getElementById("personal-info-container").style.display = "flex";
+        document.getElementById("info-button").innerHTML = "Hide Info";
+    } else {
+        document.getElementById("personal-info-container").style.display = "none";
+        document.getElementById("info-button").innerHTML = "Show Info";
+    }
+}
+
 
 document.getElementById("PDF-button").addEventListener("click", () => { html2pdf()
     .from(document.body)
